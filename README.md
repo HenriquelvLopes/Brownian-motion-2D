@@ -73,3 +73,15 @@ The original formulation of the problem, including the theoretical prediction re
 Einstein, A. (1905). *On the Movement of Small Particles Suspended in Stationary Liquids Required by the Molecular-Kinetic Theory of Heat*. Annalen der Physik, 17, 549–560.
 
 [English translation (UConn Math)](https://www2.math.uconn.edu/~gordina/Einstein_Brownian1905.pdf)
+
+Introductory Reference:
+
+Philipse, A. P. (2011). *Notes on Brownian Motion*. Utrecht University.
+
+[Notes on Brownian Motion (PDF)](https://userpages.umbc.edu/~dfrey1/ench630/philipse_notes_on_brownian_motion.pdf)
+
+Mathematical Reference:
+
+Stewart, J. *Cálculo, Volume II*. Cengage Learning.
+
+
