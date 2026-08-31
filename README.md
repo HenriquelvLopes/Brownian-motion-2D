@@ -1,8 +1,8 @@
-Brownian-motion-2D
+# Brownian-motion-2D
 
 Simulation of two-dimensional Brownian motion in Python, using random Gaussian displacements and numerical comparison of the mean squared displacement (MSD) with the theoretical relation `MSD = 4Dt`.
 
-About the Project:
+## About:
 
 This project consists of a computational simulation of Brownian motion in two dimensions. The idea is to represent a particle subjected to random displacements and numerically investigate statistical properties characteristic of the phenomenon — particularly, the relationship between the mean squared displacement (MSD) and time.
 
@@ -10,7 +10,7 @@ I chose a simple Brownian motion model as a starting point for my studies on the
 
 ## Model
 
-At each time step, the particle's displacements in the `x` and `y` directions are sampled from a normal distribution:
+The particle's displacements in the `x` and `y` directions are sampled from a *normal distribution*:
 
 $$
 \Delta x = \sqrt{2D\Delta t}\,\xi_x
@@ -27,11 +27,10 @@ $$
 The particle's position is then updated according to the Brownian diffusion model:
 
 $$
-x_{t+\Delta t}=x_t+\Delta x
-$$
-
-$$
-y_{t+\Delta t}=y_t+\Delta y
+\begin{aligned}
+x_{t+\Delta t} &= x_t+\Delta x,\\
+y_{t+\Delta t} &= y_t+\Delta y.
+\end{aligned}
 $$
 
 As a verification of the model's behavior, I numerically compare the mean squared displacement with the theoretical relation expected for the two-dimensional case:
@@ -40,7 +39,7 @@ $$\mathrm{MSD}(t) = \left\langle (x(t)-x_0)^2+(y(t)-y_0)^2 \right\rangle = 4Dt$$
 
 Therefore, for a constant diffusion coefficient, the MSD is expected to grow linearly with time.
 
-Results
+## Results
 
 The simulation produces an irregular trajectory characteristic of a Brownian process.
 
@@ -66,7 +65,9 @@ The current model represents the simplest case of Brownian diffusion, without th
 
 The identified limitations and planned next steps — such as studying MSD convergence, the influence of the time step, extending the model to three dimensions, and comparing the results with the analytical Gaussian distribution — are detailed in [`DEVELOPMENT.md`](./DEVELOPMENT.md).
 
-Historical Reference:
+## Reference:
+
+### Historical reference
 
 The original formulation of the problem, including the theoretical prediction relating the observable displacement of suspended particles to thermal molecular motion, can be found in Einstein's 1905 paper:
 
@@ -74,13 +75,13 @@ Einstein, A. (1905). *On the Movement of Small Particles Suspended in Stationary
 
 [English translation (UConn Math)](https://www2.math.uconn.edu/~gordina/Einstein_Brownian1905.pdf)
 
-Introductory Reference:
+### Introductory Reference
 
 Philipse, A. P. (2011). *Notes on Brownian Motion*. Utrecht University.
 
 [Notes on Brownian Motion (PDF)](https://userpages.umbc.edu/~dfrey1/ench630/philipse_notes_on_brownian_motion.pdf)
 
-Mathematical Reference:
+### Mathematical Reference
 
 Stewart, J. *Cálculo, Volume II*. Cengage Learning.
 
