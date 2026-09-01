@@ -76,3 +76,6 @@ Limitations and Next Steps:
 8 Extend the simulation to three dimensions, possibly using another visualization library
 
 9 Produce a final animation of the trajectory
+
+### hypotesis
+The sampling uses if step == int(time / t). With t = 0.01, the calculation time / t is subject to floating-point error; it doesn't yield exactly 100.0, but rather something like 99.9999. Defining the step as a range like a < x < b allows for values ​​that are close enough to the target but account for the floating-point margin of error.
